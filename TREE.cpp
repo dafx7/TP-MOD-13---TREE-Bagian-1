@@ -83,8 +83,5 @@ int heightTree_103012300198(adrNode root)
         return 0;
     }
 
-    int heightKiri = heightTree_103012300198(left(root));
-    int heightKanan = heightTree_103012300198(right(root));
-
-    return 1 + max(heightKiri, heightKanan);
+    return 1 + max(heightTree_103012300198(left(root)), heightTree_103012300198(right(root)));
 }
